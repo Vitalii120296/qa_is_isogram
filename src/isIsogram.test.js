@@ -15,9 +15,17 @@ describe('isIsogram', () => {
     expect(isIsogram('')).toBe(true);
   });
 
-  it('should be right result for different situation', () => {
+  it(`should be true for string 'playgrounds'`, () => {
     expect(isIsogram('playgrounds')).toBe(true);
     expect(isIsogram('look')).toBe(false);
+    expect(isIsogram('Oops')).toBe(false);
+  });
+
+  it(`should be false for string 'look'`, () => {
+    expect(isIsogram('look')).toBe(false);
+  });
+
+  it(`should be false for string 'Oops'`, () => {
     expect(isIsogram('Oops')).toBe(false);
   });
 });
