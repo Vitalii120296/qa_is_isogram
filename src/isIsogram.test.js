@@ -17,8 +17,6 @@ describe('isIsogram', () => {
 
   it(`should be true for string 'playgrounds'`, () => {
     expect(isIsogram('playgrounds')).toBe(true);
-    expect(isIsogram('look')).toBe(false);
-    expect(isIsogram('Oops')).toBe(false);
   });
 
   it(`should be false for string 'look'`, () => {
